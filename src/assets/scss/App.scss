@@ -1,0 +1,33 @@
+html,
+body {
+  font-family: 'Poppins', sans-serif !important;
+  background-color: #242526 !important;
+  height: 1200px;
+  cursor: none !important;
+}
+a:link,
+a:visited {
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.mainLink {
+  margin-right: 25px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.mainLink a {
+  color: #c6c3c3 !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar,
+.navbar.activated {
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.headspace--hidden {
+  transform: translate3d(0, -4rem, 0);
+}
+.navbar-brand:focus,
+.navbar-brand:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
