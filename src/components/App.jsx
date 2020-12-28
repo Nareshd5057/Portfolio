@@ -6,6 +6,7 @@ import WelcomePage from 'components/WelcomePage';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Header from './common/Header/Header';
 import AnimatedCursor from './common/CustomCursor/CustomCursor';
+import Landingpage from './Landingpage/Landingpage';
 class App extends React.Component {
   render() {
     return (
@@ -13,6 +14,7 @@ class App extends React.Component {
         <div className="app">
 			<AnimatedCursor/>
 			<Header />
+			<Landingpage />
           {/* <nav>
             <Link to="/">Home</Link> | <Link to="/about">About</Link>
           </nav>
