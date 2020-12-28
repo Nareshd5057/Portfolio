@@ -19,7 +19,7 @@ export default class Header extends Component {
     super(props);
     this.state = {
       previousScrollY: 0,
-      headerClasses: [],
+      headerClasses: ['fixed-top '],
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -37,13 +37,13 @@ export default class Header extends Component {
 
     if (this.state.previousScrollY < window.scrollY) {
       this.setState({
-        headerClasses: ['headspace--hidden'],
+        headerClasses: ['fixed-top headspace headspace--hidden '],
       });
       console.log('if' + window.scrollY);
       console.log('if' + this.state.previousScrollY);
     } else {
       this.setState({
-        headerClasses: ['navbar', 'activated'],
+        headerClasses: ['fixed-top headspace ', 'activated'],
       });
       console.log('else' + window.scrollY);
       console.log('else' + this.state.previousScrollY);
