@@ -6,7 +6,7 @@ class AboutPage extends React.PureComponent {
     return (
       <div>
         <h1>About</h1>
-        <p>Another page to switch(react-dom-router).</p>
+        <p>Another page to switch.</p>
       </div>
     );
   }
