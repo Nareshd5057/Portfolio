@@ -23,23 +23,48 @@ export default class Web extends Component {
               data-hover=""
               class="project-box h"
             >
-              <div class="spinner-border-wrp">
+              {/* <div class="spinner-border-wrp">
                 <span role="status" class="spinner-border">
                   <span class="sr-only">Spinning</span>
                 </span>
-              </div>{' '}
-              <div class="block-reveal projects block-reveal--active">
-                <span class="block-reveal__block white"></span>{' '}
-                <span class="block-reveal__text">
-                  <div
-                    class="project-image"
-                    data-src="/assets/img/38b89a4.jpg"
-                    lazy="loaded"
-                    //   style='background-image: url("/assets/img/38b89a4.jpg");'
-                  ></div>
-                </span>
-              </div>{' '}
-              <div class="project-meta">
+              </div> */}{' '}
+              <Tilt
+                className="parallax-effect-img project-image"
+                perspective={500}
+                glareEnable={true}
+                glareMaxOpacity={0.45}
+                scale={1.02}
+                width={500}
+                height={500}
+                scale={1.1}
+                transitionSpeed={500}
+              >
+                {/* <img src={imgTree} className="parallax-effect-img" alt="pic" /> */}
+                {/* <div className="">
+                  <div>React</div>
+                  <div>Parallax Tilt</div>
+                  <div>👀</div>
+                </div> */}
+                <div class="project-meta inner-element">
+                  <div class="block-reveal projects block-reveal--active">
+                    <span class="block-reveal__block white"></span>{' '}
+                    <span class="block-reveal__text">
+                      <br />
+                      Hotel
+                      <br />z Rowerem
+                    </span>
+                  </div>{' '}
+                  <div class="divider"></div>{' '}
+                  <div class="project-nav block-reveal block-reveal--active">
+                    <span class="block-reveal__block"></span>{' '}
+                    <span class="block-reveal__text">
+                      01
+                      <br /> <span class="arr">→</span>
+                    </span>
+                  </div>
+                </div>
+              </Tilt>
+              {/* <div class="project-meta">
                 <div class="block-reveal projects block-reveal--active">
                   <span class="block-reveal__block white"></span>{' '}
                   <span class="block-reveal__text">
@@ -58,7 +83,7 @@ export default class Web extends Component {
                     <br /> <span class="arr">→</span>
                   </span>
                 </div>
-              </div>
+              </div> */}
               <div
                 class="js-tilt-glare"
                 //   style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none;"
@@ -86,52 +111,49 @@ export default class Web extends Component {
               data-hover=""
               class="project-box h"
               style={{ marginTop: '280px', marginLeft: '-160px' }}
-              className="w100 h300"
+              className="w100 h300 project-box h"
+              lazy="loaded"
             >
-              <div class="spinner-border-wrp">
+              {/* <div class="spinner-border-wrp">
                 <span role="status" class="spinner-border">
                   <span class="sr-only">Spinning</span>
                 </span>
-              </div>{' '}
-              <div class="block-reveal projects block-reveal--active w100">
-                <span class="block-reveal__block white"></span>{' '}
-                <span class="block-reveal__text">
-                  <Tilt
-                    className="parallax-effect-img"
-                    perspective={500}
-                    glareEnable={true}
-                    glareMaxOpacity={0.45}
-                    scale={1.02}
-                    width={500}
-                    height={500}
-                  >
-                    {/* <img src={imgTree} className="inner-element" alt="pic" /> */}
-                    <div className="inner-element">
-                      <div>React</div>
-                      <div>Parallax Tilt</div>
-                      <div>👀</div>
-                    </div>
-                  </Tilt>
-                </span>
-              </div>{' '}
-              <div class="project-meta">
-                <div class="block-reveal projects block-reveal--active">
-                  <span class="block-reveal__block white"></span>{' '}
-                  <span class="block-reveal__text">
-                    <br />
-                    Hotel
-                    <br />z Rowerem
-                  </span>
-                </div>{' '}
-                <div class="divider"></div>{' '}
-                <div class="project-nav block-reveal block-reveal--active">
-                  <span class="block-reveal__block"></span>{' '}
-                  <span class="block-reveal__text">
-                    01
-                    <br /> <span class="arr">→</span>
-                  </span>
+              </div>{' '} */}
+              <Tilt
+                className="parallax-effect-img project-image"
+                perspective={500}
+                glareEnable={true}
+                glareMaxOpacity={0.45}
+                scale={1.02}
+                width={500}
+                height={500}
+              >
+                {/* <img src={imgTree} className="parallax-effect-img" alt="pic" /> */}
+                {/* <div className="">
+                  <div>React</div>
+                  <div>Parallax Tilt</div>
+                  <div>👀</div>
+                </div> */}
+                <div class="project-meta inner-element">
+                  <div class="block-reveal projects block-reveal--active">
+                    <span class="block-reveal__block white"></span>{' '}
+                    <span class="block-reveal__text">
+                      <br />
+                      Hotel
+                      <br />z Rowerem
+                    </span>
+                  </div>{' '}
+                  <div class="divider"></div>{' '}
+                  <div class="project-nav block-reveal block-reveal--active">
+                    <span class="block-reveal__block"></span>{' '}
+                    <span class="block-reveal__text">
+                      01
+                      <br /> <span class="arr">→</span>
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </Tilt>
+
               <div
                 class="js-tilt-glare"
                 //   style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none;"
@@ -157,43 +179,45 @@ export default class Web extends Component {
               data-tilt-max-glare="0.2"
               data-tilt-perspective="700"
               data-hover=""
-              class="project-box v"
+              class="project-box h"
               style={{ marginTop: '130px', marginLeft: '20px' }}
             >
-              <div class="spinner-border-wrp">
-                <span role="status" class="spinner-border">
-                  <span class="sr-only">Spinning</span>
-                </span>
-              </div>{' '}
-              <div class="block-reveal projects block-reveal--active">
-                <span class="block-reveal__block white"></span>{' '}
-                <span class="block-reveal__text">
-                  <div
-                    class="project-image"
-                    data-src="/assets/img/878209f.jpg"
-                    lazy="loaded"
-                    // style='background-image: url("/assets/img/878209f.jpg");'
-                  ></div>
-                </span>
-              </div>{' '}
-              <div class="project-meta">
-                <div class="block-reveal projects block-reveal--active">
-                  <span class="block-reveal__block white"></span>{' '}
-                  <span class="block-reveal__text">
-                    <br />
-                    <br />
-                    Decablog
-                  </span>
-                </div>{' '}
-                <div class="divider"></div>{' '}
-                <div class="project-nav block-reveal block-reveal--active">
-                  <span class="block-reveal__block"></span>{' '}
-                  <span class="block-reveal__text">
-                    02
-                    <br /> <span class="arr">→</span>
-                  </span>
+              <Tilt
+                className="parallax-effect-img project-image"
+                perspective={500}
+                glareEnable={true}
+                glareMaxOpacity={0.45}
+                scale={1.02}
+                width={500}
+                height={500}
+                scale={1.05}
+                transitionSpeed={500}
+              >
+                {/* <img src={imgTree} className="parallax-effect-img" alt="pic" /> */}
+                {/* <div className="">
+                  <div>React</div>
+                  <div>Parallax Tilt</div>
+                  <div>👀</div>
+                </div> */}
+                <div class="project-meta inner-element">
+                  <div class="block-reveal projects block-reveal--active">
+                    <span class="block-reveal__block white"></span>{' '}
+                    <span class="block-reveal__text">
+                      <br />
+                      Hotel
+                      <br />z Rowerem
+                    </span>
+                  </div>{' '}
+                  <div class="divider"></div>{' '}
+                  <div class="project-nav block-reveal block-reveal--active">
+                    <span class="block-reveal__block"></span>{' '}
+                    <span class="block-reveal__text">
+                      01
+                      <br /> <span class="arr">→</span>
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </Tilt>
               <div
                 class="js-tilt-glare"
                 // style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none;"

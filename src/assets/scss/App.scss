@@ -299,6 +299,7 @@ body {
 .parallax-effect-img {
   transform-style: preserve-3d;
   transform: perspective(1000px);
+  perspective: 500px !important;
   background-image: url('../img/web1.jpg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -314,4 +315,62 @@ body {
 }
 .h300{
 	height: 300px;
+}
+.work .spinner-border-wrp {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    z-index: 0;
+    transform: translateZ(-1px);
+}
+.work .project-box.h, .work .project-box.h .project-image {
+    width: 410px;
+    height: 230px;
+}
+.work .project-box .project-meta {
+    position: absolute;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 145px;
+    height: 160px;
+    bottom: 10px;
+    left: -60px;
+    transform: translateZ(30px);
+}
+.work .project-box .divider {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px 1px 13px;
+}
+.work .project-box .project-image[lazy=loaded] {
+    -webkit-animation-name: fadeinLeft;
+    animation-name: fadeinLeft;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-timing-function: cubic-bezier(.165,.84,.44,1);
+    animation-timing-function: cubic-bezier(.165,.84,.44,1);
+}
+.work .project-box .project-image {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    will-change: transform,opacity;
+}
+.work .project-box .project-image:before {
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(65deg,rgba(16,9,27,.8),transparent 50%);
+    position: absolute;
 }
