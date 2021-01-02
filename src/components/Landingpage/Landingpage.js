@@ -8,21 +8,47 @@ export default class Landingpage extends Component {
           <div className="mx-auto col-sm-7 col-md-7 col-9 ">
             <div className="timeline">
               <div className="timeline_bullet"></div>
-              <a href="#" className="scroll_section">
-                <div class="scroll-down"><span>Scroll</span></div>
+              <a href="#work" className="scroll_section">
+                <div className="scroll-down">
+                  <span>Scroll</span>
+                </div>
               </a>
             </div>
-            <span><div class="block-reveal block-reveal--active"><span class="block-reveal__block white"></span> <small id="first-element" class="block-reveal__text section-title mb-3 pb-3">Start /&gt;</small></div></span>
+            <span>
+              <div className="block-reveal block-reveal--active">
+                <span className="block-reveal__block white"></span>{' '}
+                <small
+                  id="first-element"
+                  className="block-reveal__text section-title mb-3 pb-3"
+                >
+                  Start /&gt;
+                </small>
+              </div>
+            </span>
             <br />
-            <div class="block-reveal block-reveal--active"><span class="block-reveal__block"></span> <h1 class="block-reveal__text subtitle mb-0">
-              Hi, my name is <strong class="cyan">Naresh</strong><br /></h1>
+            <div className="block-reveal block-reveal--active">
+              <span className="block-reveal__block"></span>{' '}
+              <h1 className="block-reveal__text subtitle mb-0">
+                Hi, my name is <strong className="cyan">Naresh</strong>
+                <br />
+              </h1>
             </div>
             <br />
-            <div class="block-reveal block-reveal--active"><span class="block-reveal__block"></span> <h1 class="block-reveal__text subtitle mt-0 ws-nowarp">
-              i <em class="serif normal">design</em> and <span class="mono fat">develop</span> <span class="anim-txt">webapps</span></h1>
+            <div className="block-reveal block-reveal--active">
+              <span className="block-reveal__block"></span>{' '}
+              <h1 className="block-reveal__text subtitle mt-0 ws-nowarp">
+                i <em className="serif normal">design</em> and{' '}
+                <span className="mono fat">develop</span>{' '}
+                <span className="anim-txt">webapps</span>
+              </h1>
             </div>
             <br />
-            <div class="block-reveal block-reveal--active"><span class="block-reveal__block white"></span> <p class="color-gray mt-2 pb-3 block-reveal__text">Let me show You...</p></div>
+            <div className="block-reveal block-reveal--active">
+              <span className="block-reveal__block white"></span>{' '}
+              <p className="color-gray mt-2 pb-3 block-reveal__text">
+                Let me show You...
+              </p>
+            </div>
           </div>
         </div>
       </div>

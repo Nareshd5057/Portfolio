@@ -59,7 +59,7 @@
     "react-router-dom": "^5.2.0",
     "react-test-renderer": "^17.0.1",
     "rimraf": "^3.0.2",
-    "sass-loader": "^10.1.0",   
+    "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
@@ -70,6 +70,7 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "express": "^4.17.1",
+    "react-parallax-tilt": "^1.4.68",
     "reactstrap": "^8.8.0"
   }
 }

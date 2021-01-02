@@ -7,14 +7,16 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Header from './common/Header/Header';
 import AnimatedCursor from './common/CustomCursor/CustomCursor';
 import Landingpage from './Landingpage/Landingpage';
+import Work from './Work/Work';
 class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
         <div className="app">
-			<AnimatedCursor/>
+			{/* <AnimatedCursor/> */}
 			<Header />
 			<Landingpage />
+			<Work />
           {/* <nav>
             <Link to="/">Home</Link> | <Link to="/about">About</Link>
           </nav>

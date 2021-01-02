@@ -174,6 +174,7 @@ function AnimatedCursor({
       pointerEvents: 'none',
       backgroundColor: `rgba(${color}, 1)`,
       transition: 'opacity 0.15s ease-in-out, transform 0.25s ease-in-out',
+      zIndex: 11111,
     },
     cursorOuter: {
       position: 'fixed',
@@ -183,6 +184,7 @@ function AnimatedCursor({
       height: outerSize,
       backgroundColor: `rgba(${color}, ${outerAlpha})`,
       transition: 'opacity 0.15s ease-in-out, transform 0.15s ease-in-out',
+      zIndex: 11111,
     },
   };
 

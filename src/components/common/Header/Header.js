@@ -39,14 +39,10 @@ export default class Header extends Component {
       this.setState({
         headerClasses: ['fixed-top headspace headspace--hidden '],
       });
-      console.log('if' + window.scrollY);
-      console.log('if' + this.state.previousScrollY);
     } else {
       this.setState({
         headerClasses: ['fixed-top headspace ', 'activated'],
       });
-      console.log('else' + window.scrollY);
-      console.log('else' + this.state.previousScrollY);
     }
     this.setState({
       previousScrollY: window.scrollY,
