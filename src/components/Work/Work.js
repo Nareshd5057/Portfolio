@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Web from './Web';
+import Lab from './Lab/Lab';
 
 export default class Work extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class Work extends Component {
           </div>
         </div>
         <Web />
+        <Lab />
       </div>
     );
   }

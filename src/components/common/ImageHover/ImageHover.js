@@ -3,7 +3,7 @@ import Tilt from 'react-parallax-tilt';
 export default class ImageHover extends Component {
   render() {
     return (
-      <div class="project-box h">
+      <div class="project-box h" style = {this.props.style}>
         {/* <div class="spinner-border-wrp">
                 <span role="status" class="spinner-border">
                   <span class="sr-only">Spinning</span>
@@ -17,8 +17,7 @@ export default class ImageHover extends Component {
           scale={1.02}
           width={500}
           height={500}
-          scale={1.1}
-          transitionSpeed={500}
+          transitionSpeed={1000}
         >
           <div class="project-meta inner-element">
             <div class="block-reveal projects block-reveal--active">

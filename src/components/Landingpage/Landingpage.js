@@ -1,5 +1,24 @@
 import React, { Component } from 'react';
+import { useDencrypt } from "use-dencrypt-effect";
 
+const values = ["Webapps", "UI", "Mobile Apps", "Animated"];
+
+const Example = () => {
+  const { result, dencrypt } = useDencrypt();
+  React.useEffect(() => {
+    let i = 0;
+    dencrypt(values[0])
+    const action = setInterval(() => {
+      dencrypt(values[i]);
+
+      i = i === values.length - 1 ? 0 : i + 1;
+    }, 2500);
+
+    return () => clearInterval(action);
+  }, []);
+
+  return <span>{result}</span>;
+};
 export default class Landingpage extends Component {
   render() {
     return (
@@ -39,7 +58,9 @@ export default class Landingpage extends Component {
               <h1 className="block-reveal__text subtitle mt-0 ws-nowarp">
                 i <em className="serif normal">design</em> and{' '}
                 <span className="mono fat">develop</span>{' '}
-                <span className="anim-txt">webapps</span>
+                <Example />
+                {/* <span className="anim-txt">webapps</span> */}
+                
               </h1>
             </div>
             <br />

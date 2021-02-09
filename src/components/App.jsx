@@ -8,6 +8,8 @@ import Header from './common/Header/Header';
 import AnimatedCursor from './common/CustomCursor/CustomCursor';
 import Landingpage from './Landingpage/Landingpage';
 import Work from './Work/Work';
+import About from './About/About';
+import Contact from './Contact/Contact';
 class App extends React.Component {
   render() {
     return (
@@ -17,6 +19,8 @@ class App extends React.Component {
 			<Header />
 			<Landingpage />
 			<Work />
+      <About />
+      <Contact />
           {/* <nav>
             <Link to="/">Home</Link> | <Link to="/about">About</Link>
           </nav>
